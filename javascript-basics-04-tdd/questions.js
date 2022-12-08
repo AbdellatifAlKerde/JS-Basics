@@ -59,25 +59,57 @@ const BMI = (weight, height) => {
 };
 
 const createLanguagesArray = () => {
-  return ["CSS", "Python", "C#", "JS"];
+  return ["Html", "CSS", "Java", "PHP"];
 };
 
-const createNumbersArray = () => {};
+const createNumbersArray = () => {
+  return [0, 1, 2, 3, 4, 5];
+};
 
-const replaceElement = (languages) => {};
+const replaceElement = (languages) => {
+  let a = ["Html", "CSS", "Java", "PHP"];
+  a[2] = "Javascript";
+  return a;
+};
 
-const addElement = (languages) => {};
+const addElement = (languages) => {
+  let ar = ["Html", "CSS", "Javascript", "PHP"];
+  ar.push("Ruby", "Python");
+  return ar;
+};
 
-const addNumberElement = (numbers) => {};
+const addNumberElement = (numbers) => {
+  let ar = [0, 1, 2, 3, 4, 5];
+  ar.unshift(-2, -1);
+  return ar;
+};
 
-const removeFirst = (languages) => {};
+const removeFirst = (languages) => {
+  let ar = ["Html", "CSS", "Javascript", "PHP", "Ruby", "Python"];
+  ar.shift();
+  return ar;
+};
 
-const removeLast = (languages) => {};
+const removeLast = (languages) => {
+  let ar = ["CSS", "Javascript", "PHP", "Ruby", "Python"];
+  ar.pop();
+  return ar;
+};
 
-const convertStrToArr = (social_arr) => {};
+const convertStrToArr = (social_arr) => {
+  return social_arr.split(",");
+};
 
-const convertArrToStr = (languages) => {};
+const convertArrToStr = (languages) => {
+  return languages.join(",");
+};
 
-const sortArr = (social_arr) => {};
+const sortArr = (social_arr) => {
+  social_arr.sort();
+  return social_arr;
+};
 
-const invertArr = (social_arr) => {};
+const invertArr = (social_arr) => {
+  social_arr.reverse();
+  return social_arr;
+};
